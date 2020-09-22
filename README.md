@@ -247,7 +247,7 @@ npm install react-csv
 
 #### フォルダ構成です。
 ```
-- react-app-氏名/
+- user-management-氏名/
 --- api/
 --- fe/
 ----- src/
