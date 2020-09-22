@@ -592,18 +592,18 @@ th:first-child {
 }
 
 tr:nth-of-type(odd) {
-    background: rgb(219, 222, 224);
+    background: #00dee0;
 }
 
 th {
-    background: rgb(84,84,84);
+    background: #005454;
     color: white;
     font-weight: bold;
 }
 
 td, th {
     padding: 5px;
-    border: 1px solid rgb(194,194,194);
+    border: 1px solid #00c2c2;
     text-align: left;
 }
 ```
