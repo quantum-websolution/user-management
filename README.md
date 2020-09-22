@@ -612,7 +612,7 @@ td, th {
 bootstrapを追加します。\
 `import 'bootstrap/dist/css/bootstrap.min.css';`
 
-## 3. 実行
+## 4. 実行
 #### バックエンド側
 以下のコマンドを実行します。
 ```
@@ -630,6 +630,3 @@ npm start
 ```
 問題なければポート3001で実行されます。\
 `http://localhost:3001`
-
-
-
