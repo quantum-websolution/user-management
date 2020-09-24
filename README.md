@@ -9,12 +9,43 @@ React.jsでフロントエンド、Express(Node.js)とPostgreSQLでバックエ�
 ・データを表示、編集、削除ができる\
 ・データのインポートとエクスポートする機能を作る（CSVフォーマット）
 
-## 1. データベース
-#### PostgreSQLをインストールします。
-`brew install postgres`
+## 1. 環境構築
+#### Windows
+##### GITをインストールします。
+以下のURLから最新の64bitバージョンをダウンロードとインストールしてください。\
+`https://git-scm.com/download/win`\
+※GITをインストールしたら、Windowsでもbashが使えるようになります。VSCodeでDefault Shellをbashに変えてください。
 
-#### PostgreSQLを起動します。
+##### Node.jsをインストールします。
+以下のURLから最新のWindows Installerをダウンロードとインストールしてください。\
+`https://nodejs.org/en/download/`
+
+##### PostgreSQLをインストールします。
+1.以下のURLから最新バージョンのWindows x86-64をダウンロードします。\
+`https://www.enterprisedb.com/downloads/postgres-postgresql-downloads`\
+2.インストール時にパスワード以外の設定を変える必要はないです。\
+3.インストールが終わりましたら、PostgreSQLの追加ツールをインストールする画面が開きますが、インストールせずに閉じてください。
+
+#### Mac
+##### homebrewをインストールします。
+1.`https://brew.sh`から`Install Homebrew`の下にあるコマンドをコピーしてください。\
+2.ターミナルを開いて、コピーしたコマンドを実行してください。\
+3.終わるまでに数回enterとパスワードを入力する必要があります。
+
+##### Node.jsをインストールします。
+`brew install node`をターミナルで実行してください。
+
+##### PostgreSQLをインストールします。
+`brew install postgres`をターミナルで実行してください。
+
+## 2. データベース
+#### PostgreSQLを起動します。(Mac)
 `brew services start postgres`
+
+#### PostgreSQLを起動します。(Windows)
+SQL Shell (psql)を起動します。\
+接続時に、パスワード以外、各質問に対して何も入力せずにenterキーを押してください。\
+`postgres=#`が表示されたら、コマンドを入力できます。
 
 #### データベースを作成します。
 `CREATE DATABASE test;`
@@ -48,7 +79,7 @@ VALUES('UEDA', 'test@mail.com', '00000000000', '2020-10-01 00:00');
 #### postgresを閉じます。
 `\q`
 
-## 2. バックエンド
+## 3. バックエンド
 #### フォルダ構成です。
 ```
 - user-management-氏名/
@@ -226,7 +257,7 @@ module.exports = {
 }
 ```
 
-## 3. フロントエンド
+## 4. フロントエンド
 #### reactをインストールします。
 ```
 cd user-management-氏名 (cd ..)
@@ -612,7 +643,7 @@ td, th {
 bootstrapを追加します。\
 `import 'bootstrap/dist/css/bootstrap.min.css';`
 
-## 4. 実行
+## 5. 実行
 #### バックエンド側
 以下のコマンドを実行します。
 ```
