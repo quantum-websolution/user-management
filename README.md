@@ -45,7 +45,7 @@ React.jsでフロントエンド、Express(Node.js)とPostgreSQLでバックエ�
 #### PostgreSQLを起動します。(Windows)
 SQL Shell (psql)を起動します。\
 接続時に、パスワード以外、各質問に対して何も入力せずにenterキーを押してください。\
-`postgres=#`が表示されたら、コマンドを入力できます。
+`postgres=#`が表示されたら、コマンドを入力することができます。
 
 #### データベースを作成します。
 `CREATE DATABASE test;`
