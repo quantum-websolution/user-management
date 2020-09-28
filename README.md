@@ -40,7 +40,8 @@ React.jsでフロントエンド、Express(Node.js)とPostgreSQLでバックエ�
 
 ## 2. データベース
 #### PostgreSQLを起動します。(Mac)
-`brew services start postgres`
+`brew services start postgres`\
+`psql postgres`
 
 #### PostgreSQLを起動します。(Windows)
 SQL Shell (psql)を起動します。\
