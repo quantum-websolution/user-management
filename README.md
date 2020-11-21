@@ -85,10 +85,10 @@ VALUES('UEDA', 'test@mail.com', '00000000000', '2020-10-01 00:00');
 以下のフォルダー構成を参考にフォルダー&ファイルを作成してください。
 ```
 user-management-氏名/
-┣━api/
-┃ ┣ server.js
-┃ ┗controllers/
-┃   ┗accountsController.js
+┗ api/
+  ┣ server.js
+  ┗ controllers/
+    ┗ accountsController.js
 ```
 
 #### NPMをインストールします。
@@ -280,17 +280,17 @@ npm install react-csv
 
 #### フォルダ構成です。
 ```
-- user-management-氏名/
---- api/
---- fe/
------ src/
-------- components/
---------- Forms/
------------ AddEditForm.js
---------- Modals/
------------ AddEditModal.js
---------- Tables/
------------ AccountsTable.js
+user-management-氏名/
+┣ api/
+┗ fe/
+  ┗ src/
+    ┗ components/
+      ┣ Forms/
+      ┃ ┗ AddEditForm.js
+      ┣ Modals/
+      ┃ ┗ AddEditModal.js
+      ┗ Tables/
+        ┗ AccountsTable.js
 ```
 
 #### App.jsを修正します。
