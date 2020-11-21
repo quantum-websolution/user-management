@@ -82,12 +82,13 @@ VALUES('UEDA', 'test@mail.com', '00000000000', '2020-10-01 00:00');
 
 ## 3. バックエンド
 #### フォルダ構成です。
+以下のフォルダー構成を参考にフォルダー&ファイルを作成してください。
 ```
-- user-management-氏名/
---- api/
------ server.js
------ controllers/
-------- accountsController.js
+user-management-氏名/
+┣━api/
+┃ ┣ server.js
+┃ ┗controllers/
+┃   ┗accountsController.js
 ```
 
 #### NPMをインストールします。
@@ -105,7 +106,7 @@ npm install morgan
 npm install nodemon --save-dev
 ```
 
-#### package.jsonを修正します。
+#### package.jsonを作成します。
 `"main": "index.js",`\
 ↓\
 `"main": "server.js",`
@@ -117,7 +118,7 @@ npm install nodemon --save-dev
 ↓\
 `"start": "nodemon server.js",`
 
-#### server.jsを修正します。
+#### server.jsを作成します。
 ```
 const express = require('express');
 const app = express();
@@ -170,7 +171,7 @@ app.listen(process.env.PORT || 3000, () => {
 });
 ```
 
-#### accountsController.jsを修正します。
+#### accountsController.jsを作成します。
 ```
 const getData = (req, res, db) => {
   db.select('*').from('accounts')
