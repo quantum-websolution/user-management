@@ -1,7 +1,7 @@
 # Reactユーザー管理アプリ
-React.jsでフロントエンド、Express(Node.js)とPostgreSQLでバックエンドの基本的なCRUDアプリです。
+React.jsでフロントエンド、Express(Node.js)とPostgreSQLでバックエンドの基本的なCRUD操作を理解し、ユーザー管理Webアプリケーションを作成します。
 
-課題は、以下の仕様を使ったアプリを作成します。\
+以下を課題とし、アプリケーションの作成を行います。\
 ・アプリのテーマとデザインは自由に決める\
 ・複数のDBテーブルを使う（3個〜）\
 ・ログイン画面を作成する\
@@ -10,33 +10,37 @@ React.jsでフロントエンド、Express(Node.js)とPostgreSQLでバックエ�
 ・データのインポートとエクスポートする機能を作る（CSVフォーマット）
 
 ## 1. 環境構築
-#### Windows
-##### GITをインストールします。
-以下のURLから最新の64bitバージョンをダウンロードとインストールしてください。\
-`https://git-scm.com/download/win`\
-※GITをインストールしたら、Windowsでもbashが使えるようになります。VSCodeでDefault Shellをbashに変えてください。
+<!-- #### Windows -->
 
-##### Node.jsをインストールします。
-以下のURLから最新のWindows Installerをダウンロードとインストールしてください。\
-`https://nodejs.org/en/download/`
+#### Node.jsのインストール
+Webアプリケーション作成において、現場などでよく使用サーバーのツールです。\
+詳しくはWikipediaを参照してください。\
+https://ja.wikipedia.org/wiki/Node.js
+<!-- 以下のURLから最新のWindows Installerをダウンロードとインストールしてください。\
+`https://nodejs.org/en/download/` -->
 
-##### PostgreSQLをインストールします。
-1.以下のURLから最新バージョンのWindows x86-64をダウンロードします。\
+#### PostgreSQLのインストール
+PostgreSQL（ポストグレスキューエル）はオープンソースのリレーショナルデータベース管理システム（RDBMS）です。\
+簡単に言えばDBを管理するシステムです。\
+詳しくはWikipediaを参照してください。\
+https://ja.wikipedia.org/wiki/PostgreSQL
+<!-- 1.以下のURLから最新バージョンのWindows x86-64をダウンロードします。\
 `https://www.enterprisedb.com/downloads/postgres-postgresql-downloads`\
 2.インストール時にパスワード以外の設定を変える必要はないです。\
-3.インストールが終わりましたら、PostgreSQLの追加ツールをインストールする画面が開きますが、インストールせずに閉じてください。
+3.インストールが終わりましたら、PostgreSQLの追加ツールをインストールする画面が開きますが、インストールせずに閉じてください。 -->
 
-#### Mac
-##### homebrewをインストールします。
-1.`https://brew.sh`から`Install Homebrew`の下にあるコマンドをコピーしてください。\
+<!-- TODO: そもそもここの課題にくるまでに各々の環境におけるインストール作業は理解させておきたいので、不要 -->
+<!-- #### Mac -->
+<!-- ##### homebrewのインストール -->
+<!-- 1.`https://brew.sh`から`Install Homebrew`の下にあるコマンドをコピーしてください。\
 2.ターミナルを開いて、コピーしたコマンドを実行してください。\
-3.終わるまでに数回enterとパスワードを入力する必要があります。
+3.終わるまでに数回enterとパスワードを入力する必要があります。 -->
 
-##### Node.jsをインストールします。
-`brew install node`をターミナルで実行してください。
+<!-- ##### Node.jsのインストール -->
+<!-- `brew install node`をターミナルで実行してください。 -->
 
-##### PostgreSQLをインストールします。
-`brew install postgres`をターミナルで実行してください。
+<!-- ##### PostgreSQLのインストール -->
+<!-- `brew install postgres`をターミナルで実行してください。 -->
 
 ## 2. データベース
 #### PostgreSQLを起動します。(Mac)
